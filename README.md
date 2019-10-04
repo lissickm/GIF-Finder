@@ -1,67 +1,29 @@
-# Giphy Search and Favorites
+# GIF-Finder
+GIF-Finder is an application combines the giphy.com api with a search feature. Simply type in the name of a category and all the GIFs you would ever want to see on that topic will populate the screen. Click on a GIF to be able to add it to one of your favorite categories. Get sick of one? Just click delete to get rid of it.
 
-This week you will be building a Giphy searching and favoriting application which allows the user to save images and sort them into categories.
+### Technologies
+JavaScript, React, Node.js, PostgreSQL, SQL, Express, giphy.com API and others
 
-In this project you will need to utilize React, Redux, Sagas and integrate them with a 3rd party API....all in a group project!
+### Getting Started
+These instructions will get you a copy of the project up and running on your local machine.
 
-## Team Setup
-Do not clone this repository. Instead, have one person download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Make your team collaborators. Have them clone directly from the person who did the setup, not fork.
+### Prerequisites
+Before you get started, make sure you have the following software installed on your computer:
 
+- [Node.js](https://nodejs.org/en/)
+- [PostrgeSQL](https://www.postgresql.org/)
+- [Nodemon](https://nodemon.io/)
 
-## Create Database and Tables
-
-See the `database.sql` file for database setup and details. It offers some of the SQL to get you started but you'll need to set up your tables and the relationships between them. 
-
-
-## Development Setup Instructions
-
-* Run `npm install`
-* Start postgres if not running already by using `brew services start postgresql`
-* Run `npm run server` to start the server
-* Run `npm run client` to start the client
-* Navigate to `localhost:3000`
-
-
-## Base Features
-
-You will need 2 views for the Base Features. You should put some thought into the UI and how to style it.
-
+### Download this project.
+- npm install
+- Open the database.sql file in the repo. Create a favorites table in Postico
+- Make sure the database is connected
+- npm start server
+- npm run client
 
 ### Search View
-
-- Allow a user to enter a search string and submit a search request.
-- Query the `Giphy API Search Endpoint` with the given search string FROM THE SERVER.
-- Display the results on the DOM.
-- Allow a user to Favorite any of the result images. You'll need to think about what information to save to your own database. Generally you only store the minimum needed to show this image again on the Favorites view.
-
+![Search View](images/searchScreen.png)
 
 ### Favorites View
+![Favorites View](images/favoritesView.png)
 
-- Allow a user to see all of the Giphy images they have Favorited. The actual images need to appear on the DOM.
-- Allow a user to set a category for a favorite image.
-    - Each favorite image can only have 1 category at a time.
-    - The category needs to be one of the categories in the database.
-
-
-## Existing Routes
-
-You are given two router modules on the server with stubs for the routes you may need.
-
-- `GET /api/category` (complete)
-    - returns a list of all categories from the table ordered by name. You may test it if your server is running: [http://localhost:5000/api/category](http://localhost:5000/api/category)
-
-- `POST /api/favorite` (incomplete)
-    - for adding a new favorite image. You'll need to think about what is needed. Does it need a category?
-
-- `PUT /api/favorite` (incomplete)
-    - for setting a category on an image. It expects both a query parameter and a data body. Feel free to change it.
-
-
-## Stretch Features
-
-1. Allow favorites to be removed/unfavorited
-2. Allow for a favorite to have many categories
-3. Implement the pagination feature of the Giphy search results
-4. Add another view that allows a user to manage (create, edit, delete) categories
-
-# GIF-Finder
