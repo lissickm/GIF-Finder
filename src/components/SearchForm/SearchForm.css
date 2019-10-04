@@ -1,0 +1,19 @@
+.SearchForm {
+    width: 50%;
+    margin: auto;
+}
+
+.search {
+  display: inline-flex;
+  align-content: center;
+  padding: 5% 0;
+}
+
+/* Search Button */
+.searchBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}

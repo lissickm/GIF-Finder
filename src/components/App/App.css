@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@font-face {
+  font-family: 'Nunito', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Nunito');
+}
+
+.App {
+  text-align: center;
+}
+
+.App-title {
+    padding-top: 1.5%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.div-favoriteList {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+}
+
+.div-searchList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+}
+
+img {
+  width: 375px;
+  height: 250px;
+  margin-top: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+.table-favoriteItem {
+    margin-bottom: 1%;
+}
+
+.thead-favoriteItem {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(233, 233, 227);
+    width: 100%;
+    text-align: center;
+}
+
+.h3-yourFavorites {
+    margin-top: 1%;
+}
+
+.div-formBody{
+  margin-top: 1%;
+  display: inline-block;
+}
+
+.input-search{
+  width: 70%;
+}
+
+.input-group.mb-6{
+  width: 400px;
+}
+
+.submit{
+  margin-top: 3%;
+}
+
+.input-group-text{
+  background-color: rgb(206, 175, 236);
+}
+
+.td-1 {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.td-2 {
+  text-align: right;
+  padding-right: 5%;
+}
