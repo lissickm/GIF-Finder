@@ -22,8 +22,8 @@ Before you get started, make sure you have the following software installed on y
 - npm run client
 
 ### Search View
-![Search View](images/searchScreen.png)
+![Search View](searchScreen.png)
 
 ### Favorites View
-![Favorites View](images/favoritesView.png)
+![Favorites View](favoritesView.png)
 
